@@ -11,6 +11,49 @@
 
 <body>
 
+    <!-- Container per l'intero progetto -->
+    <div class="container-pagina">
+        <!-- Titolo principale -->
+        <h1>Calcola il prezzo del tuo biglietto!</h1>
+
+        <!-- DATI UTENTE -->
+        <section class="input-dati-utente">
+            <!-- Inserisco row e col per poi avere nello stilyng la possibilità di applicare un display flex o comunque di poterci lavorare in maniera ottimale -->
+            <div class="row">
+                <!-- Dati anagrafici -->
+                <div class="col">
+                    <label for="nome">Nome e Cognome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Inserisci i tuoi dati qui">
+                </div>
+                <!-- Dettagli tratta -->
+                <div class="col">
+                    <label for="km">Km da percorrere</label>
+                    <input type="number" id="km" name="km" placeholder="Inserisci km della tua tratta">
+                </div>
+                <!-- Fascia di età -->
+                <div class="col">
+                    <label for="fascia-età">Fascia di età</label>
+                    <select name="fascia-età" id="fascia-età">
+                        <option value="Minorenne">Minorenne</option>
+                        <option value="Maggiorenne">Maggiorenne</option>
+                        <option value="Over65">Over 65</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Bottoni azioni eseguibili (inserimento dati corretto ed invio / pulizia dei dati inseriti in caso di errore) -->
+            <div class="actions">
+                <button id="btn-genera-biglietto" class="btn">
+                    Genera biglietto
+                </button>
+                <button id="btn-annulla-inserimento" class="btn">
+                    Annulla
+                </button>
+            </div>
+            
+        </section>
+
+    </div>
 
 
 
