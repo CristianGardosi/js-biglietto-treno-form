@@ -13,8 +13,9 @@
 
     <!-- Container per l'intero progetto -->
     <div class="container-pagina">
+
         <!-- Titolo principale -->
-        <h1>Calcola il prezzo del tuo biglietto!</h1>
+        <h1>Calcola il prezzo del tuo biglietto ora!</h1>
 
         <!-- DATI UTENTE -->
         <section class="input-dati-utente">
@@ -51,6 +52,58 @@
                 </button>
             </div>
             
+        </section>
+
+        <!-- CREAZIONE BIGLIETTO -->
+        <!-- Sfrutto una classe hidden in modo che la sezione sia inizialemtne nascosta e mi compaia solo quando i dati vengono effettivamente inseriti ed inviati -->
+        <section id="biglietto" class="hidden">
+
+            <h2>Ecco il tuo biglietto, grazie e buon viaggio!</h2>
+
+            <!-- Container in cui vado ad inserire tutto ciò che dovrà comparire nel mio biglietto -->
+            <div class="contenuto-biglietto">
+                <!-- Primo elemento, dati anagrafici stampati -->
+                <div class="nome-cognome">
+                    <h3>Nominativo:</h3>
+                    <!-- Lo span verrà riempito in maniera DINAMICA quando avrò i dati inseriti dall'utente -->
+                    <span class="nome-passeggero"></span>
+                </div>
+
+                <!-- Per questa sezione creaiamo una table -->
+                <div class="info-offerta">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Offerta</th>
+                                <th>Carrozza</th>
+                                <th>Codice cambio prenotazione</th>
+                                <th>Posto</th>
+                            </tr>
+                        </thead>
+                        <!-- In table body sfrutto nuovamente gli span come fatto per nome-passeggero in modo da avere una creazione DINAMICA dei dati -->
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span id="offerta-applicata"></span>
+                                </td>
+                                <td>
+                                    <span id="carrozza"></span>
+                                </td>
+                                <td>
+                                    <span id="codice-cambio-prenotazione"></span>
+                                </td>
+                                <td>
+                                    <span id="costo"></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                            
+                    </table>
+                </div>
+            </div>
+
+
+
         </section>
 
     </div>
