@@ -1,3 +1,25 @@
+/* GENERAL STYLES */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Krona One', sans-serif;
+    background: maroon;
+    color: gold;
+}
+
+.btn {
+    padding: 5px 15px;
+    border-radius: 5px;
+    background: white;
+    color: maroon;
+    margin: 20px 5px;
+    font-size: 15px;
+}
+
 /* UTILITIES */
 .hidden{
     opacity: 0;
@@ -5,4 +27,45 @@
 
 .show{
     opacity: 1;
+}
+
+.mb30 {
+    margin-bottom: 30px;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+/* LAYOUT */
+.row,
+.actions{
+    display: flex;
+    justify-content: center;
+}
+
+.col{
+    margin: 0 20px;
+}
+
+.info-offerta{
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 80%;
+}
+
+table,
+th,
+td {
+    text-align: center;
+    border: 1px solid gold;
+    padding: 10px;
 }

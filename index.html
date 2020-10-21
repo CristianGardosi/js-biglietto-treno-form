@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./css/style.css">
     <title>Biglietto treno JS</title>
 </head>
@@ -15,7 +16,7 @@
     <div class="container-pagina">
 
         <!-- Titolo principale -->
-        <h1>Calcola il prezzo del tuo biglietto ora!</h1>
+        <h1 class="mb30 mt30 text-center">Calcola il prezzo del tuo biglietto ora!</h1>
 
         <!-- DATI UTENTE -->
         <section class="input-dati-utente">
@@ -44,10 +45,10 @@
 
             <!-- Bottoni azioni eseguibili (inserimento dati corretto ed invio / pulizia dei dati inseriti in caso di errore) -->
             <div class="actions">
-                <button id="btn-genera-biglietto" class="btn">
+                <button id="btn-genera-biglietto" class="btn mb30">
                     Genera biglietto
                 </button>
-                <button id="btn-annulla-inserimento" class="btn">
+                <button id="btn-annulla-inserimento" class="btn mb30">
                     Annulla
                 </button>
             </div>
@@ -58,13 +59,13 @@
         <!-- Sfrutto una classe hidden in modo che la sezione sia inizialemtne nascosta e mi compaia solo quando i dati vengono effettivamente inseriti ed inviati -->
         <section id="biglietto" class="hidden">
 
-            <h2>Ecco il tuo biglietto, grazie e buon viaggio!</h2>
+            <h2 class="mb30 text-center">Ecco il tuo biglietto, grazie e buon viaggio!</h2>
 
             <!-- Container in cui vado ad inserire tutto ciò che dovrà comparire nel mio biglietto -->
             <div class="contenuto-biglietto">
                 <!-- Primo elemento, dati anagrafici stampati -->
                 <div class="nome-cognome">
-                    <h3>Nominativo: 
+                    <h3 class="mb30 text-center">Nominativo: 
                          <!-- Lo span verrà riempito in maniera DINAMICA quando avrò i dati inseriti dall'utente -->
                         <span id="nome-passeggero"></span>
                     </h3>

@@ -7,7 +7,7 @@
 
 // Bottoni genera / annulla
 var bottoneGenera = document.getElementById('btn-genera-biglietto');
-var bottoneAnnulla = document.getElementById('btn-annulla-biglietto');
+var bottoneAnnulla = document.getElementById('btn-annulla-inserimento');
 
 // section id="biglietto"
 var containerBiglietto = document.getElementById('biglietto');
@@ -65,7 +65,6 @@ document.getElementById('codice-cambio-prenotazione').innerHTML = numeroCambioPr
 
 document.getElementById('costo').innerHTML = costoBiglietto;
 
-
 // RENDERE VISIBILE IL BIGLIETTO DOPO TUTTO L'INSERIMENTO DATI
 // Vado a riprendermi la classe utility che ho creato all'inizio del mio foglio JS e che ho associato alla relativa classe HTML che fa da container all'intero contenuto del biglietto
 containerBiglietto.className = 'show'
@@ -73,3 +72,23 @@ containerBiglietto.className = 'show'
 });
 
 
+
+// RESET TOTALE PAGINA E BIGLIETTO 
+// In questo punto ci occupiamo del bottone annulla, se premuto cancella ogni dato inserito negli input e il biglietto non viene più visualizzato su schermo
+bottoneAnnulla.addEventListener('click', function() {
+    containerBiglietto.className = 'hidden';
+    // Pulizia vari input
+    var nome = document.getElementById('nome').value = '';
+    var kmDaPercorrere = document.getElementById('km').value = '';
+    var fasciaEtà = document.getElementById('fascia-età').value = '';
+
+    document.getElementById('nome-passeggero').innerHTML = '';
+
+document.getElementById('offerta-applicata').innerHTML = '';
+
+document.getElementById('carrozza').innerHTML = '';
+
+document.getElementById('codice-cambio-prenotazione').innerHTML = '';
+
+document.getElementById('costo').innerHTML = '';
+});
