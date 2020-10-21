@@ -38,12 +38,12 @@ var offerta = 'Biglietto Standard';
 
 if (fasciaEtà == 'minorenne') {
     costoBiglietto -= costoBiglietto * 0.2;
-    offerta = 'Applicato sconto minorenni del 20%';
+    offerta = 'Sconto minorenni del 20%';
 }
 
 else if (fasciaEtà == 'over65') {
     costoBiglietto -= costoBiglietto * 0.4;
-    offerta = 'Applicato sconto over65 del 40%';
+    offerta = 'Sconto over65 del 40%';
 }
 // Gestione decimali valuta (2 decimali)
 costoBiglietto = costoBiglietto.toFixed(2) + ' $';
@@ -65,4 +65,11 @@ document.getElementById('codice-cambio-prenotazione').innerHTML = numeroCambioPr
 
 document.getElementById('costo').innerHTML = costoBiglietto;
 
+
+// RENDERE VISIBILE IL BIGLIETTO DOPO TUTTO L'INSERIMENTO DATI
+// Vado a riprendermi la classe utility che ho creato all'inizio del mio foglio JS e che ho associato alla relativa classe HTML che fa da container all'intero contenuto del biglietto
+containerBiglietto.className = 'show'
+
 });
+
+
